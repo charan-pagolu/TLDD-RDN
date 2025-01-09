@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tomato Leaf Disease Identification</title>
+		<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Tomato Leaf Disease Identification</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								
+								<li><a href="{{ url_for('first')}}">Home</a></li>
+								 
+								<li><a href="{{ url_for('login')}}">Login</a></li>
+								<li><a href="{{ url_for('index')}}">Preview</a></li>
+								<li><a href="{{ url_for('performance')}}">Performance_analysis</a></li>
+								 
+								<li><a href="{{ url_for('chart')}}">Chart</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						 
+								 
+								 <center><h2>Chart</h2></center>
+          
+                               
+                         
+						       
+        </div>
+		
+		</br>
+        </div>
+</br>
+<html>
+  
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['class', 'percentage'],
+          ['Tomato___Bacterial_spot',     40],
+         
+          ['Tomato___healthy',    30],
+		  ['Tomato___Leaf_Mold',     35],
+         
+          ['Tomato___Early_blight',    45],
+		  ['Tomato___Septoria_leaf_spot',     30],
+         
+          ['Tomato_Yellow_Leaf_Curl_Virus',    25]
+        ]);
+
+        var options = {
+          title: '',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+	  
+    </script>
+  </head>
+  <body>
+    <center><h1>Tomato Leaf Disease Identification detection </h1></center>
+   
+    <center><div id="piechart_3d" style="width: 900px; height: 500px; "></div></center>
+	 
+  </body>
+							 
+							 
+							 
+							 
+							 
+							 
+							 
+							 
+							 
+						</div>
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						 
+						 
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/jquery.dropotron.min.js"></script>
+			<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="../static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="../static/assets/js/browser.min.js"></script>
+			<script src="../static/assets/js/breakpoints.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+
+	</body>
+</html>

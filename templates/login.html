@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tomato Leaf Disease Identification</title>
+		<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Tomato Leaf Disease Identification </a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+						<ul>
+								<li><a href="{{ url_for('first')}}">Home</a></li>
+								 
+								<li><a href="{{ url_for('login')}}">Login</a></li>
+								<li><a href="{{ url_for('index')}}">Preview</a></li>
+							</ul>
+								 
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+					<center> <h2><a href="#">Login</a></h2></center>
+							<header>
+								
+								   <head>
+
+        
+         
+	
+		 <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+        function login(){
+        var uname = document.getElementById("uname").value;
+        var pwd = document.getElementById("pwd").value;
+
+	if(uname == "admin" && pwd == "admin")
+	{
+	  alert("Login Success!");
+	  
+	  window.location = "{{url_for('index')}}";
+	  return false;
+	}
+	else
+	{
+	alert("Invalid Credentials!")
+	}
+        }
+		
+		  
+
+
+ 
+    </script>
+	
+</head>
+ 
+ <body id="page-top">
+
+   
+ 
+
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio" id="portfolio">
+ 
+      <br>
+	  <br>
+      <!-- Portfolio Section Heading -->
+       
+      <!-- Icon Divider -->
+    
+
+      <!-- Portfolio Grid Items -->
+      <div class="row">
+ 
+        <div class="col-md-30 col-lg-25" style="margin-left:500px">
+		 <div class="control-group">
+			      <!-- Username -->
+				 
+			      <label class="control-label"   for="username"><b>Username</b></label>
+			      <div class="controls">
+			        <input type="text" id="uname" name="uname" placeholder="Username" class="form-control">
+			       
+				  </div>
+			    </div>
+				</br>
+			
+			    <div class="control-group">
+			      <!-- Password-->
+				  
+			      <label class="control-label"  for="password"><b>Password</b></label>
+			      <div class="controls">
+			        <input type="password" id="pwd" name="pwd" placeholder="Password" class="form-control">
+			      
+				  </div>
+			    </div>
+				 <div class="col-md-6 col-lg-4" style="margin-left:-150px">
+			    <div class="control-group">
+			      <!-- Button -->
+				  <br>
+			      <div class="controls">
+				   
+			        <input type="button" class="btn btn-success" value="Login" style="margin-left: 180px" onclick="login()">
+			      
+				  </div>
+			    </div>
+				 </div>
+  </div>
+  </div>
+ 
+ 
+  </section>
+
+
+  
+
+    </body>
+		  
+								 
+								 
+								 
+							</header>
+							 
+							 
+							 
+							 
+							 
+							 
+							 
+							 
+						</div>
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						 
+						 
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/jquery.dropotron.min.js"></script>
+			<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="../static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="../static/assets/js/browser.min.js"></script>
+			<script src="../static/assets/js/breakpoints.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+
+	</body>
+</html>
